@@ -14,7 +14,7 @@
         <br>
         <div>
             <label for="slaptazodis">Slaptažodis: (mažiausiai 8 simbolių)</label>
-            <input type="password" id="slaptazodis" name="slaptazodis" minlength="7" maxlength="12">
+            <input type="password" id="slaptazodis" name="slaptazodis" minlength="7" maxlength="12" required>
         </div>
         <br>
         <div>
@@ -31,7 +31,7 @@
         <div>
             <label for="salis">Šalis</label>
             <select name="adresai" id="adresuList">
-                <option value=""disabled selected>Pasirinkite savo šalį</option>
+                <option value="" disabled selected>Pasirinkite savo šalį</option>
                 <option value="lietuva">Lietuva</option>
                 <option value="latvija">Latvija</option>
                 <option value="estija">Estija</option>
@@ -51,12 +51,12 @@
         <div>
             <p>Lytis:</p>
             <label for="vyras">Vyras</label>
-            <input type="radio" id="vyras" name="vyras">
+            <input type="radio" id="vyras" name="lytis">
         </div>
         <br>
         <div>
             <label for="moteris">Moteris</label>
-            <input type="radio" id="moteris" name="moteris">
+            <input type="radio" id="moteris" name="lytis">
         </div>
         <br>
         <div>
@@ -89,7 +89,7 @@
             <label for="apie">Apie:</label><textarea id="apie" name="apie" rows="10" cols="50"></textarea>
         </div>
         <br>
-        <button>Pateikti</button>
+        <button class="mygtukas" type="button">Pateikti</button>
     </form>
 </body>
 </html>
